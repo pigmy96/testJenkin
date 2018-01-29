@@ -1,0 +1,55 @@
+.thumbnail img {
+	max-height: 200px;
+}
+.thumbnail .description {
+	color: #7f7f7f;
+}
+.price {
+	font-weight: bold;
+	font-size: 16px;
+}
+.thumbnail img #imgHome{
+	max-height: 500px;
+	min-height: 500px;
+}
+.cover
+	{
+    height: 400px;
+	margin-left: 30px;
+	margin-right: 30px;
+    background-color: #3e3e3e;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+	}
+	.imgTable img {
+	max-height: 75px;
+	min-height: 75px;
+}
+.table {
+    width: 70% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.detail {
+    width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.btn-add{
+	margin-top: 10px !important;
+    margin-left: 20px !important;
+}
+.navbar-nav>.user-menu>.dropdown-menu>li.user-header {
+    height: fit-content !important;
+}
+
+.order-detail-box{
+	display: flex;
+}
+.order-detail{
+	margin-right: 20px;
+}
+.upload{
+	margin-left: 20px !important;
+}

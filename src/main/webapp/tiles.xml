@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <!-- Base Define -->
+    <definition name="base.definition"
+                template="/views/layoutViews/layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/views/layoutViews/header.jsp" />
+        <put-attribute name="menu" value="/views/layoutViews/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/views/layoutViews/footer.jsp" />
+    </definition>
+
+    <!-- login -->
+
+    <definition name="accessDenied" extends="base.definition">
+        <put-attribute name="title" value="403 EROR" />
+        <put-attribute name="body" value="/views/accountViews/accessDenied.jsp" />
+    </definition>
+    <definition name="accountInfo" extends="base.definition">
+        <put-attribute name="title" value="Music Store-Account Information" />
+        <put-attribute name="body" value="/views/accountViews/accountInfo.jsp" />
+    </definition>
+    <definition name="index" extends="base.definition">
+        <put-attribute name="title" value="Music Store-Home Page" />
+        <put-attribute name="body" value="/views/albumViews/index.jsp" />
+    </definition>
+    <definition name="login" extends="base.definition">
+        <put-attribute name="title" value="PMusic Store-Log In" />
+        <put-attribute name="body" value="/views/accountViews/login.jsp" />
+    </definition>
+
+    <definition name="albumDetail" extends="base.definition">
+        <put-attribute name="title" value="Music Store-Album Detail" />
+        <put-attribute name="body" value="/views/albumViews/albumDetail.jsp" />
+    </definition>
+
+    <definition name="manageAlbum" extends="base.definition">
+        <put-attribute name="title" value="Music Store-Manage Albums" />
+        <put-attribute name="body" value="/views/albumViews/manageAlbum.jsp" />
+    </definition>
+    <definition name="addAlbum" extends="base.definition">
+        <put-attribute name="title" value="Music Store-Add new album" />
+        <put-attribute name="body" value="/views/albumViews/addAlbum.jsp" />
+    </definition>
+    <definition name="editAlbum" extends="base.definition">
+        <put-attribute name="title" value="Music Store-Edit album" />
+        <put-attribute name="body" value="/views/albumViews/editAlbum.jsp" />
+    </definition>
+    <definition name="listCart" extends="base.definition">
+        <put-attribute name="title" value="Music Store-Cart List" />
+        <put-attribute name="body" value="/views/orderViews/listCart.jsp" />
+    </definition>
+    <definition name="checkOut" extends="base.definition">
+        <put-attribute name="title" value="Music Store-Check Out" />
+        <put-attribute name="body" value="/views//orderViews/checkOut.jsp" />
+    </definition>
+    <definition name="orderList" extends="base.definition">
+        <put-attribute name="title" value="Music Store-Order History" />
+        <put-attribute name="body" value="/views//orderViews/orderList.jsp" />
+    </definition>
+    <definition name="orderDetailList" extends="base.definition">
+        <put-attribute name="title" value="Music Store-Order Detail" />
+        <put-attribute name="body" value="/views//orderViews/orderDetailList.jsp" />
+    </definition>
+    <definition name="confirmCheckOut" extends="base.definition">
+        <put-attribute name="title" value="Music Store-Check Out" />
+        <put-attribute name="body" value="/views//orderViews/confirmCheckOut.jsp" />
+    </definition>
+    <definition name="success" extends="base.definition">
+        <put-attribute name="title" value="Music Store-Check Out Success" />
+        <put-attribute name="body" value="/views//orderViews/success.jsp" />
+    </definition>
+    <definition name="register" extends="base.definition">
+        <put-attribute name="title" value="Music Store-Register" />
+        <put-attribute name="body" value="/views/accountViews/register.jsp" />
+    </definition>
+    <definition name="addGenre" extends="base.definition">
+        <put-attribute name="title" value="Music Store-Add new genre" />
+        <put-attribute name="body" value="/views/addGenre.jsp" />
+    </definition>
+    <definition name="addArtist" extends="base.definition">
+        <put-attribute name="title" value="Music Store-Add new artist" />
+        <put-attribute name="body" value="/views/addArtist.jsp" />
+    </definition>
+</tiles-definitions>
